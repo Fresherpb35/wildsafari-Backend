@@ -21,10 +21,10 @@ const app = express();
 app.use(helmet());
 const allowedOrigins = [
   'http://localhost:3000',
+  'https://wildlife-rose.vercel.app',
   'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
-  'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app/',
-  'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app/',
-  
+  'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app',
+  'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app'
 ];
 
 app.use(cors({
