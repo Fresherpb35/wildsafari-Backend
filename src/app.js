@@ -19,11 +19,26 @@ const app = express();
 
 // ─── SECURITY MIDDLEWARE ──────────────────────────────────────────────────────
 app.use(helmet());
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
+  'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app/',
+];
+
 app.use(cors({
-  origin:      process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: function(origin, callback) {
+    // allow requests with no origin (like Postman or server-to-server)
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error(`CORS: ${origin} not allowed`), false);
+    }
+  },
   credentials: true,
-  methods:     ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  methods: ['GET','POST','PATCH','DELETE','OPTIONS'],
+  allowedHeaders: ['Content-Type','Authorization'],
 }));
 
 // ─── RATE LIMITING ────────────────────────────────────────────────────────────

@@ -222,3 +222,11 @@ Please make sure your database server is running at `aws-1-ap-northeast-2.pooler
 2026-04-03 14:17:04 [info]: ✅ Database connected
 2026-04-03 14:17:04 [info]: 🚀 Server running on port 5000 [development]
 2026-04-03 14:18:04 [info]: SIGINT received — shutting down gracefully
+2026-04-03 14:40:36 [info]: 📧 Email transporter ready
+2026-04-03 14:40:36 [info]: ✅ Database connected
+2026-04-03 14:40:36 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 14:43:58 [info]: SIGINT received — shutting down gracefully
+2026-04-03 15:14:11 [info]: 📧 Email transporter ready
+2026-04-03 15:14:11 [info]: ✅ Database connected
+2026-04-03 15:14:11 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 15:22:28 [info]: SIGINT received — shutting down gracefully
