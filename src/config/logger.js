@@ -1,42 +1,28 @@
-// ─── LOGGER CONFIG (Winston) ──────────────────────────────────────────────────
-const { createLogger, format, transports } = require('winston');
-const DailyRotateFile = require('winston-daily-rotate-file');
-const path = require('path');
+const winston = require('winston');
 
-const { combine, timestamp, printf, colorize, errors } = format;
+const transports = [
+  new winston.transports.Console(), // always allowed
+];
 
-const logFormat = printf(({ level, message, timestamp, stack }) => {
-  return `${timestamp} [${level}]: ${stack || message}`;
-});
+// ❌ Only use file logging in local (NOT in Vercel)
+if (process.env.NODE_ENV !== 'production') {
+  const DailyRotateFile = require('winston-daily-rotate-file');
 
-const logger = createLogger({
-  level: process.env.NODE_ENV === 'production' ? 'info' : 'debug',
-  format: combine(
-    timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-    errors({ stack: true }),
-    logFormat
-  ),
-  transports: [
-    // Console (with colour in dev)
-    new transports.Console({
-      format: combine(colorize(), timestamp({ format: 'HH:mm:ss' }), logFormat),
-    }),
-    // Rotating error log
+  transports.push(
     new DailyRotateFile({
-      filename:    path.join('logs', 'error-%DATE%.log'),
+      filename: 'logs/app-%DATE%.log',
       datePattern: 'YYYY-MM-DD',
-      level:       'error',
-      maxFiles:    '14d',
       zippedArchive: true,
-    }),
-    // Rotating combined log
-    new DailyRotateFile({
-      filename:    path.join('logs', 'combined-%DATE%.log'),
-      datePattern: 'YYYY-MM-DD',
-      maxFiles:    '14d',
-      zippedArchive: true,
-    }),
-  ],
+      maxSize: '20m',
+      maxFiles: '14d',
+    })
+  );
+}
+
+const logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.simple(),
+  transports,
 });
 
 module.exports = logger;
