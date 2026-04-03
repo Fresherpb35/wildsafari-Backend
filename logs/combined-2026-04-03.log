@@ -1,0 +1,216 @@
+2026-04-03 10:27:33 [warn]: Slow query (222ms): BEGIN
+2026-04-03 10:27:33 [warn]: Slow query (246ms): DEALLOCATE ALL
+2026-04-03 10:27:34 [warn]: Slow query (539ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:27:34 [warn]: Slow query (317ms): COMMIT
+2026-04-03 10:27:34 [http]: ::1 - - [03/Apr/2026:04:57:34 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-03 10:42:28 [http]: ::1 - - [03/Apr/2026:05:12:28 +0000] "PATCH /api/bookings/cmnifmt010001127riibs18k5/status HTTP/1.1" 401 57 "-" "PostmanRuntime/7.51.1"
+2026-04-03 10:44:34 [info]: SIGINT received — shutting down gracefully
+2026-04-03 10:44:42 [info]: 📧 Email transporter ready
+2026-04-03 10:44:42 [info]: ✅ Database connected
+2026-04-03 10:44:42 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 10:44:48 [warn]: Slow query (266ms): BEGIN
+2026-04-03 10:44:48 [warn]: Slow query (318ms): DEALLOCATE ALL
+2026-04-03 10:44:49 [warn]: Slow query (544ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:44:49 [warn]: Slow query (308ms): COMMIT
+2026-04-03 10:44:53 [info]: 📧 Confirmation email sent after status update
+2026-04-03 10:44:53 [http]: ::1 - - [03/Apr/2026:05:14:53 +0000] "PATCH /api/bookings/cmnifmt010001127riibs18k5/status HTTP/1.1" 200 379 "-" "PostmanRuntime/7.51.1"
+2026-04-03 10:45:44 [warn]: Slow query (273ms): SELECT 1
+2026-04-03 10:45:45 [warn]: Slow query (256ms): BEGIN
+2026-04-03 10:45:45 [warn]: Slow query (219ms): DEALLOCATE ALL
+2026-04-03 10:45:45 [warn]: Slow query (448ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:45:46 [warn]: Slow query (300ms): COMMIT
+2026-04-03 10:45:46 [http]: ::1 - - [03/Apr/2026:05:15:46 +0000] "PATCH /api/bookings/cmnifmt010001127riibs18k5/status HTTP/1.1" 200 379 "-" "PostmanRuntime/7.51.1"
+2026-04-03 10:46:38 [warn]: Slow query (221ms): SELECT 1
+2026-04-03 10:46:39 [warn]: Slow query (220ms): BEGIN
+2026-04-03 10:46:39 [warn]: Slow query (258ms): DEALLOCATE ALL
+2026-04-03 10:46:39 [warn]: Slow query (469ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:46:40 [warn]: Slow query (298ms): COMMIT
+2026-04-03 10:46:40 [http]: ::1 - - [03/Apr/2026:05:16:40 +0000] "PATCH /api/bookings/cmnhowgjo0000127raysu0eq8/status HTTP/1.1" 200 381 "-" "PostmanRuntime/7.51.1"
+2026-04-03 10:47:56 [warn]: Slow query (314ms): SELECT 1
+2026-04-03 10:47:56 [warn]: Slow query (221ms): BEGIN
+2026-04-03 10:47:57 [warn]: Slow query (250ms): DEALLOCATE ALL
+2026-04-03 10:47:57 [warn]: Slow query (552ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:47:58 [warn]: Slow query (376ms): COMMIT
+2026-04-03 10:47:58 [http]: ::1 - - [03/Apr/2026:05:17:58 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-03 10:48:33 [warn]: Slow query (263ms): SELECT 1
+2026-04-03 10:48:33 [warn]: Slow query (301ms): BEGIN
+2026-04-03 10:48:34 [warn]: Slow query (229ms): DEALLOCATE ALL
+2026-04-03 10:48:34 [warn]: Slow query (430ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:48:34 [warn]: Slow query (306ms): COMMIT
+2026-04-03 10:48:34 [http]: ::1 - - [03/Apr/2026:05:18:34 +0000] "PATCH /api/bookings/cmnigd0yr0000gqcx5yvsp0dy/status HTTP/1.1" 200 380 "-" "PostmanRuntime/7.51.1"
+2026-04-03 10:49:17 [warn]: Slow query (352ms): SELECT 1
+2026-04-03 10:49:17 [warn]: Slow query (271ms): BEGIN
+2026-04-03 10:49:17 [warn]: Slow query (217ms): DEALLOCATE ALL
+2026-04-03 10:49:18 [warn]: Slow query (450ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:49:18 [warn]: Slow query (313ms): COMMIT
+2026-04-03 10:49:18 [http]: ::1 - - [03/Apr/2026:05:19:18 +0000] "PATCH /api/bookings/cmnigd0yr0000gqcx5yvsp0dy/status HTTP/1.1" 200 380 "-" "PostmanRuntime/7.51.1"
+2026-04-03 10:53:38 [info]: SIGINT received — shutting down gracefully
+2026-04-03 10:53:45 [info]: 📧 Email transporter ready
+2026-04-03 10:53:45 [info]: ✅ Database connected
+2026-04-03 10:53:45 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 10:54:39 [warn]: Slow query (288ms): SELECT 1
+2026-04-03 10:54:39 [warn]: Slow query (228ms): BEGIN
+2026-04-03 10:54:39 [warn]: Slow query (235ms): DEALLOCATE ALL
+2026-04-03 10:54:40 [warn]: Slow query (631ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:54:40 [warn]: Slow query (398ms): COMMIT
+2026-04-03 10:54:40 [http]: ::1 - - [03/Apr/2026:05:24:40 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-03 10:55:41 [warn]: Slow query (243ms): SELECT 1
+2026-04-03 10:55:41 [warn]: Slow query (233ms): BEGIN
+2026-04-03 10:55:41 [warn]: Slow query (255ms): DEALLOCATE ALL
+2026-04-03 10:55:42 [warn]: Slow query (487ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 10:55:42 [warn]: Slow query (353ms): COMMIT
+2026-04-03 10:55:42 [http]: ::1 - - [03/Apr/2026:05:25:42 +0000] "PATCH /api/bookings/cmniglnpd00002qjaouf9oftm/status HTTP/1.1" 200 378 "-" "PostmanRuntime/7.51.1"
+2026-04-03 11:16:05 [info]: SIGINT received — shutting down gracefully
+2026-04-03 11:16:10 [info]: 📧 Email transporter ready
+2026-04-03 11:16:10 [info]: ✅ Database connected
+2026-04-03 11:16:10 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 11:27:18 [info]: SIGINT received — shutting down gracefully
+2026-04-03 11:27:56 [info]: 📧 Email transporter ready
+2026-04-03 11:27:56 [info]: ✅ Database connected
+2026-04-03 11:27:56 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 11:28:08 [warn]: Slow query (214ms): BEGIN
+2026-04-03 11:28:09 [warn]: Slow query (207ms): DEALLOCATE ALL
+2026-04-03 11:28:09 [warn]: Slow query (563ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 11:28:10 [warn]: Slow query (586ms): COMMIT
+2026-04-03 11:28:10 [http]: ::1 - - [03/Apr/2026:05:58:10 +0000] "PATCH /api/bookings/cmniglnpd00002qjaouf9oftm/status HTTP/1.1" 200 378 "-" "PostmanRuntime/7.51.1"
+2026-04-03 11:28:19 [warn]: Slow query (210ms): SELECT 1
+2026-04-03 11:28:20 [warn]: Slow query (225ms): BEGIN
+2026-04-03 11:28:20 [warn]: Slow query (219ms): DEALLOCATE ALL
+2026-04-03 11:28:20 [warn]: Slow query (429ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 11:28:21 [warn]: Slow query (346ms): COMMIT
+2026-04-03 11:28:24 [info]: 📧 Confirmation email sent after status update
+2026-04-03 11:28:24 [http]: ::1 - - [03/Apr/2026:05:58:24 +0000] "PATCH /api/bookings/cmniglnpd00002qjaouf9oftm/status HTTP/1.1" 200 378 "-" "PostmanRuntime/7.51.1"
+2026-04-03 11:29:21 [warn]: Slow query (372ms): SELECT 1
+2026-04-03 11:29:21 [warn]: Slow query (211ms): BEGIN
+2026-04-03 11:29:21 [warn]: Slow query (255ms): DEALLOCATE ALL
+2026-04-03 11:29:21 [warn]: Slow query (416ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 11:29:22 [warn]: Slow query (301ms): COMMIT
+2026-04-03 11:29:22 [http]: ::1 - - [03/Apr/2026:05:59:22 +0000] "PATCH /api/bookings/cmniglnpd00002qjaouf9oftm/status HTTP/1.1" 200 378 "-" "PostmanRuntime/7.51.1"
+2026-04-03 11:30:25 [info]: SIGINT received — shutting down gracefully
+2026-04-03 11:33:01 [error]: PrismaClientInitializationError: Can't reach database server at `aws-1-ap-northeast-2.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-ap-northeast-2.pooler.supabase.com:6543`.
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 11:37:46 [info]: 📧 Email transporter ready
+2026-04-03 11:37:50 [error]: PrismaClientInitializationError: Can't reach database server at `aws-1-ap-northeast-2.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-ap-northeast-2.pooler.supabase.com:6543`.
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 11:41:03 [info]: 📧 Email transporter ready
+2026-04-03 11:41:05 [error]: PrismaClientInitializationError: Can't reach database server at `aws-1-ap-northeast-2.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-ap-northeast-2.pooler.supabase.com:6543`.
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 11:41:58 [info]: 📧 Email transporter ready
+2026-04-03 11:42:01 [error]: PrismaClientInitializationError: Can't reach database server at `aws-1-ap-northeast-2.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-ap-northeast-2.pooler.supabase.com:6543`.
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 11:50:16 [info]: 📧 Email transporter ready
+2026-04-03 11:50:18 [error]: PrismaClientInitializationError: Error querying the database: FATAL: Circuit breaker open: Unable to establish connection to upstream database
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 12:02:41 [info]: 📧 Email transporter ready
+2026-04-03 12:02:42 [error]: PrismaClientInitializationError: Error querying the database: FATAL: Tenant or user not found
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 12:03:41 [info]: 📧 Email transporter ready
+2026-04-03 12:03:44 [error]: PrismaClientInitializationError: Can't reach database server at `aws-1-ap-northeast-2.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-ap-northeast-2.pooler.supabase.com:6543`.
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 12:04:09 [info]: 📧 Email transporter ready
+2026-04-03 12:04:13 [error]: PrismaClientInitializationError: Can't reach database server at `aws-1-ap-northeast-2.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-ap-northeast-2.pooler.supabase.com:6543`.
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 12:05:38 [info]: 📧 Email transporter ready
+2026-04-03 12:05:42 [error]: PrismaClientInitializationError: Can't reach database server at `aws-1-ap-northeast-2.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-ap-northeast-2.pooler.supabase.com:6543`.
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-03 12:07:04 [info]: 📧 Email transporter ready
+2026-04-03 12:07:04 [info]: ✅ Database connected
+2026-04-03 12:07:04 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 12:08:02 [warn]: Slow query (226ms): SELECT 1
+2026-04-03 12:08:03 [warn]: Slow query (455ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:08:03 [http]: ::1 - - [03/Apr/2026:06:38:03 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-03 12:08:49 [warn]: Slow query (225ms): SELECT 1
+2026-04-03 12:08:49 [warn]: Slow query (450ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:08:49 [http]: ::1 - - [03/Apr/2026:06:38:49 +0000] "PATCH /api/bookings/cmnij817t000013qubupv2iew/status HTTP/1.1" 200 378 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:09:56 [warn]: Slow query (244ms): SELECT 1
+2026-04-03 12:09:57 [warn]: Slow query (230ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:09:57 [http]: ::1 - - [03/Apr/2026:06:39:57 +0000] "PATCH /api/bookings/cmnij817t000013qubupv2iew/status HTTP/1.1" 200 378 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:10:51 [warn]: Slow query (271ms): SELECT 1
+2026-04-03 12:10:51 [warn]: Slow query (233ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:10:54 [info]: 📧 Confirmation email sent after status update
+2026-04-03 12:10:54 [http]: ::1 - - [03/Apr/2026:06:40:54 +0000] "PATCH /api/bookings/cmnij817t000013qubupv2iew/status HTTP/1.1" 200 378 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:17:52 [info]: 📧 Email transporter ready
+2026-04-03 12:17:52 [info]: ✅ Database connected
+2026-04-03 12:17:52 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 12:18:07 [info]: 📧 Email transporter ready
+2026-04-03 12:18:07 [info]: ✅ Database connected
+2026-04-03 12:18:07 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 12:19:07 [warn]: Slow query (225ms): SELECT 1
+2026-04-03 12:19:08 [warn]: Slow query (432ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:19:08 [http]: ::1 - - [03/Apr/2026:06:49:08 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-03 12:19:40 [warn]: Slow query (221ms): SELECT 1
+2026-04-03 12:19:41 [warn]: Slow query (609ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:19:45 [info]: 📧 Confirmation email sent after status update
+2026-04-03 12:19:45 [http]: ::1 - - [03/Apr/2026:06:49:45 +0000] "PATCH /api/bookings/cmnijmans0000n304jf7b9kct/status HTTP/1.1" 200 381 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:21:35 [http]: ::1 - - [03/Apr/2026:06:51:35 +0000] "POST /api/bookings HTTP/1.1" 422 109 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-03 12:21:41 [warn]: Slow query (216ms): SELECT 1
+2026-04-03 12:21:42 [warn]: Slow query (256ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:21:42 [http]: ::1 - - [03/Apr/2026:06:51:42 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-03 12:22:08 [warn]: Slow query (206ms): SELECT 1
+2026-04-03 12:22:08 [warn]: Slow query (272ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:22:12 [info]: 📧 Confirmation email sent after status update
+2026-04-03 12:22:12 [http]: ::1 - - [03/Apr/2026:06:52:12 +0000] "PATCH /api/bookings/cmnijplbw0001n304y0x5hbsg/status HTTP/1.1" 200 379 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:24:51 [info]: 📧 Email transporter ready
+2026-04-03 12:24:51 [info]: ✅ Database connected
+2026-04-03 12:24:51 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 12:24:56 [info]: 📧 Email transporter ready
+2026-04-03 12:24:56 [info]: ✅ Database connected
+2026-04-03 12:24:56 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 12:25:22 [info]: 📧 Email transporter ready
+2026-04-03 12:25:22 [info]: ✅ Database connected
+2026-04-03 12:25:22 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 12:29:46 [warn]: Slow query (256ms): SELECT 1
+2026-04-03 12:29:46 [warn]: Slow query (448ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:29:46 [http]: ::1 - - [03/Apr/2026:06:59:46 +0000] "PATCH /api/bookings/cmnijplbw0001n304y0x5hbsg/status HTTP/1.1" 200 379 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:30:15 [warn]: Slow query (256ms): SELECT 1
+2026-04-03 12:30:15 [warn]: Slow query (224ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:30:15 [http]: ::1 - - [03/Apr/2026:07:00:15 +0000] "PATCH /api/bookings/cmnijplbw0001n304y0x5hbsg/status HTTP/1.1" 200 379 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:30:36 [warn]: Slow query (433ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:30:36 [http]: ::1 - - [03/Apr/2026:07:00:36 +0000] "PATCH /api/bookings/cmnijplbw0001n304y0x5hbsg/status HTTP/1.1" 200 379 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:31:47 [info]: ✅ Database connected
+2026-04-03 12:31:47 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 12:31:47 [info]: 📧 Email transporter ready
+2026-04-03 12:32:05 [warn]: Slow query (209ms): SELECT 1
+2026-04-03 12:32:06 [warn]: Slow query (431ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:32:10 [info]: 📧 Confirmation email sent after status update
+2026-04-03 12:32:10 [http]: ::1 - - [03/Apr/2026:07:02:10 +0000] "PATCH /api/bookings/cmnijplbw0001n304y0x5hbsg/status HTTP/1.1" 200 379 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:32:52 [warn]: Slow query (213ms): SELECT 1
+2026-04-03 12:32:52 [warn]: Slow query (209ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:32:56 [info]: 📧 Confirmation email sent after status update
+2026-04-03 12:32:56 [http]: ::1 - - [03/Apr/2026:07:02:56 +0000] "PATCH /api/bookings/cmnijplbw0001n304y0x5hbsg/status HTTP/1.1" 200 379 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:40:36 [warn]: Slow query (627ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:40:36 [http]: ::1 - - [03/Apr/2026:07:10:36 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-03 12:41:15 [warn]: Slow query (503ms): SELECT 1
+2026-04-03 12:41:16 [warn]: Slow query (960ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:41:19 [info]: 📧 Confirmation email sent after status update
+2026-04-03 12:41:19 [http]: ::1 - - [03/Apr/2026:07:11:19 +0000] "PATCH /api/bookings/cmnikdwc40000474z04s5rld3/status HTTP/1.1" 200 381 "-" "PostmanRuntime/7.51.1"
+2026-04-03 12:47:02 [warn]: Slow query (465ms): UPDATE "public"."bookings" SET "status" = CAST($1::text AS "public"."BookingStatus"), "updatedAt" = $2 WHERE ("public"."bookings"."id" = $3 AND 1=1) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-04-03 12:47:07 [info]: 📧 Confirmation email sent after status update
+2026-04-03 12:47:07 [http]: ::1 - - [03/Apr/2026:07:17:07 +0000] "PATCH /api/bookings/cmnikdwc40000474z04s5rld3/status HTTP/1.1" 200 381 "-" "PostmanRuntime/7.51.1"
+2026-04-03 13:15:47 [info]: ✅ Database connected
+2026-04-03 13:15:47 [info]: 🚀 Server running on port 5000 [development]
+2026-04-03 13:15:47 [info]: 📧 Email transporter ready
+2026-04-03 13:16:11 [info]: SIGINT received — shutting down gracefully

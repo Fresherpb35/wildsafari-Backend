@@ -1,0 +1,80 @@
+2026-03-29 09:48:25 [info]: ✅ Database connected
+2026-03-29 09:48:25 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 09:48:26 [warn]: 📧 Email transporter not ready:
+2026-03-29 09:52:14 [http]: ::1 - - [29/Mar/2026:04:22:14 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 09:52:18 [http]: ::1 - - [29/Mar/2026:04:22:18 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:14:45 [info]: ✅ Database connected
+2026-03-29 10:14:45 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 10:14:46 [warn]: 📧 Email transporter not ready:
+2026-03-29 10:16:25 [http]: ::1 - - [29/Mar/2026:04:46:25 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:20:45 [http]: ::1 - - [29/Mar/2026:04:50:45 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:24:21 [http]: ::1 - - [29/Mar/2026:04:54:21 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:24:53 [http]: ::1 - - [29/Mar/2026:04:54:53 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:24:54 [http]: ::1 - - [29/Mar/2026:04:54:54 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:24:56 [http]: ::1 - - [29/Mar/2026:04:54:56 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:24:58 [http]: ::1 - - [29/Mar/2026:04:54:58 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:24:59 [http]: ::1 - - [29/Mar/2026:04:54:59 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:25:12 [http]: ::1 - - [29/Mar/2026:04:55:12 +0000] "POST /api/bookings HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:32:21 [info]: ✅ Database connected
+2026-03-29 10:32:21 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 10:32:21 [warn]: 📧 Email transporter not ready:
+2026-03-29 10:33:27 [http]: ::1 - - [29/Mar/2026:05:03:27 +0000] "POST /api/bookings HTTP/1.1" 422 120 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:33:33 [http]: ::1 - - [29/Mar/2026:05:03:33 +0000] "POST /api/bookings HTTP/1.1" 422 120 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:34:39 [warn]: Slow query (282ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-03-29 10:34:39 [http]: ::1 - - [29/Mar/2026:05:04:39 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 10:34:42 [warn]: Booking email 0 failed:
+2026-03-29 10:34:42 [warn]: Booking email 1 failed:
+2026-03-29 10:36:16 [info]: ✅ Database connected
+2026-03-29 10:36:16 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 20:13:43 [info]: ✅ Database connected
+2026-03-29 20:13:43 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 20:13:44 [warn]: 📧 Email transporter not ready:
+2026-03-29 20:30:14 [info]: ✅ Database connected
+2026-03-29 20:30:15 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 20:30:44 [warn]: 📧 Email transporter not ready:
+2026-03-29 20:31:16 [warn]: Slow query (470ms): SELECT 1
+2026-03-29 20:31:16 [warn]: Slow query (445ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-03-29 20:31:16 [http]: ::1 - - [29/Mar/2026:15:01:16 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 20:31:18 [warn]: Booking email 0 failed:
+2026-03-29 20:31:18 [warn]: Booking email 1 failed:
+2026-03-29 21:10:37 [error]: PrismaClientInitializationError: Can't reach database server at `db.khdbvtjnsjkwdpvucxnb.supabase.co:5432`
+
+Please make sure your database server is running at `db.khdbvtjnsjkwdpvucxnb.supabase.co:5432`.
+    at t (C:\Users\shubh\Downloads\wild-main\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\shubh\Downloads\wild-main\wild-main\backend\src\server.js:13:5)
+2026-03-29 21:13:16 [warn]: 📧 Email transporter not ready:
+2026-03-29 21:13:19 [error]: PrismaClientInitializationError: Can't reach database server at `db.khdbvtjnsjkwdpvucxnb.supabase.co:5432`
+
+Please make sure your database server is running at `db.khdbvtjnsjkwdpvucxnb.supabase.co:5432`.
+    at t (C:\Users\shubh\Downloads\wild-main\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\shubh\Downloads\wild-main\wild-main\backend\src\server.js:13:5)
+2026-03-29 21:16:11 [warn]: 📧 Email transporter not ready:
+2026-03-29 21:16:12 [info]: ✅ Database connected
+2026-03-29 21:16:12 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 21:17:02 [warn]: Slow query (233ms): SELECT 1
+2026-03-29 21:17:03 [warn]: Slow query (1067ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-03-29 21:17:03 [http]: ::1 - - [29/Mar/2026:15:47:03 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 21:17:05 [warn]: Booking email 0 failed:
+2026-03-29 21:17:05 [warn]: Booking email 1 failed:
+2026-03-29 21:24:23 [info]: ✅ Database connected
+2026-03-29 21:24:23 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 21:24:24 [warn]: 📧 Email transporter not ready:
+2026-03-29 21:25:42 [http]: ::1 - - [29/Mar/2026:15:55:42 +0000] "POST /api/contacts HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 21:28:17 [info]: ✅ Database connected
+2026-03-29 21:28:17 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 21:28:18 [warn]: 📧 Email transporter not ready:
+2026-03-29 21:31:00 [info]: ✅ Database connected
+2026-03-29 21:31:00 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 21:31:01 [warn]: 📧 Email transporter not ready:
+2026-03-29 21:32:01 [warn]: Slow query (503ms): INSERT INTO "public"."bookings" ("id","name","email","phone","safariDate","safariType","safariZone","safariTime","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,CAST($6::text AS "public"."SafariType"),$7,CAST($8::text AS "public"."SafariTime"),CAST($9::text AS "public"."BookingStatus"),$10,$11) RETURNING "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt"
+2026-03-29 21:32:01 [http]: ::1 - - [29/Mar/2026:16:02:01 +0000] "POST /api/bookings HTTP/1.1" 201 148 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 21:32:04 [warn]: Booking email 0 failed:
+2026-03-29 21:32:04 [warn]: Booking email 1 failed:
+2026-03-29 21:32:32 [http]: ::1 - - [29/Mar/2026:16:02:32 +0000] "POST /api/contacts HTTP/1.1" 422 127 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 21:32:42 [warn]: Slow query (409ms): INSERT INTO "public"."contacts" ("id","name","email","message","status","createdAt","updatedAt") VALUES ($1,$2,$3,$4,CAST($5::text AS "public"."ContactStatus"),$6,$7) RETURNING "public"."contacts"."id", "public"."contacts"."name", "public"."contacts"."email", "public"."contacts"."message", "public"."contacts"."status"::text, "public"."contacts"."createdAt", "public"."contacts"."updatedAt"
+2026-03-29 21:32:42 [http]: ::1 - - [29/Mar/2026:16:02:42 +0000] "POST /api/contacts HTTP/1.1" 201 85 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-03-29 21:32:44 [warn]: Contact email 0 failed:
+2026-03-29 21:32:44 [warn]: Contact email 1 failed:
+2026-03-29 21:33:20 [info]: ✅ Database connected
+2026-03-29 21:33:20 [info]: 🚀 Server running on port 5000 [development]
+2026-03-29 21:33:21 [warn]: 📧 Email transporter not ready:

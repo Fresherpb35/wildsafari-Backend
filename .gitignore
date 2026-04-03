@@ -1,0 +1,34 @@
+# Node modules (VERY IMPORTANT)
+node_modules/
+
+# Build folder
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Dependency directories
+jspm_packages/
+
+# Optional: Ignore specific JSON files
+# (Uncomment if needed)
+# package-lock.json
+# yarn.lock
