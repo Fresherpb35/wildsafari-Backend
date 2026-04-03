@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0",
-    "prisma": "^5.10.2"
+    "prisma": "^5.22.0"
   },
   "engines": {
     "node": ">=18.0.0"
