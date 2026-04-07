@@ -6,7 +6,7 @@ const logger     = require('../config/logger');
 // POST /api/bookings  — public
 async function createBooking(req, res, next) {
   try {
-    const { name, email: userEmail, phone, safariDate, safariType, safariZone, safariTime } = req.body;
+    const { name, email: userEmail, phone, safariDate, safariType, safariZone, safariTime, status = 'PENDING', notes } = req.body;
 
     const booking = await prisma.booking.create({
       data: {
@@ -17,12 +17,14 @@ async function createBooking(req, res, next) {
         safariType: safariType || 'GYPSY',
         safariZone,
         safariTime: safariTime || 'MORNING',
+        status,
+        notes:      notes || null,
       },
     });
 
-    // Fire emails (non-blocking — don't fail request if email fails)
+    // Send admin alert (non-blocking)
     Promise.allSettled([
-      email.sendBookingAlert(booking),//admin only
+      email.sendBookingAlert(booking),
     ]).then(results => {
       results.forEach((r, i) => {
         if (r.status === 'rejected') logger.warn(`Booking email ${i} failed:`, r.reason?.message);
@@ -60,7 +62,12 @@ async function getAllBookings(req, res, next) {
     return res.json({
       success: true,
       data:    bookings,
-      pagination: { total, page: parseInt(page), limit: parseInt(limit), pages: Math.ceil(total / parseInt(limit)) },
+      pagination: { 
+        total, 
+        page: parseInt(page), 
+        limit: parseInt(limit), 
+        pages: Math.ceil(total / parseInt(limit)) 
+      },
     });
   } catch (err) {
     next(err);
@@ -74,6 +81,60 @@ async function getBookingById(req, res, next) {
     if (!booking) return res.status(404).json({ success: false, message: 'Booking not found' });
     return res.json({ success: true, data: booking });
   } catch (err) {
+    next(err);
+  }
+}
+
+// PUT /api/bookings/:id  — Full Update (Used by Frontend Edit)
+// PATCH /api/bookings/:id/status  — admin
+// PUT /api/bookings/:id  — Full Update
+async function updateBooking(req, res, next) {
+  try {
+    const { id } = req.params;
+    const data = req.body;
+
+    // Pehle purana booking fetch karo taaki status change pata chale
+    const oldBooking = await prisma.booking.findUnique({ where: { id } });
+    if (!oldBooking) {
+      return res.status(404).json({ success: false, message: "Booking not found" });
+    }
+
+    const updatedBooking = await prisma.booking.update({
+      where: { id },
+      data: {
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        safariDate: data.safariDate ? new Date(data.safariDate) : undefined,
+        safariType: data.safariType,
+        safariZone: data.safariZone,
+        safariTime: data.safariTime,
+        status: data.status,
+        notes: data.notes || null,
+      },
+    });
+
+    // 🔥 Status change hone par user ko email bhejo
+    if (data.status && data.status !== oldBooking.status) {
+      try {
+        if (data.status === 'CONFIRMED' || data.status === 'CANCELLED') {
+          await email.sendBookingStatusUpdate(updatedBooking);
+          logger.info(`📧 Status update email sent to ${updatedBooking.email} → ${data.status}`);
+        }
+      } catch (err) {
+        logger.warn(`❌ Failed to send status email to ${updatedBooking.email}:`, err.message);
+      }
+    }
+
+    res.json({
+      success: true,
+      message: "Booking updated successfully",
+      data: updatedBooking,
+    });
+  } catch (err) {
+    if (err.code === 'P2025') {
+      return res.status(404).json({ success: false, message: "Booking not found" });
+    }
     next(err);
   }
 }
@@ -93,8 +154,7 @@ async function updateBookingStatus(req, res, next) {
       data: { status },
     });
 
-    // 🔥 ADD THIS BLOCK
-  if (status === 'CONFIRMED' || status === 'CANCELLED') {
+    if (status === 'CONFIRMED' || status === 'CANCELLED') {
       try {
         await email.sendBookingConfirmation(booking);
         logger.info("📧 Confirmation email sent after status update");
@@ -108,7 +168,6 @@ async function updateBookingStatus(req, res, next) {
       message: `Booking ${status.toLowerCase()}`,
       data: booking,
     });
-
   } catch (err) {
     next(err);
   }
@@ -118,10 +177,63 @@ async function updateBookingStatus(req, res, next) {
 async function deleteBooking(req, res, next) {
   try {
     await prisma.booking.delete({ where: { id: req.params.id } });
-    return res.json({ success: true, message: 'Booking deleted' });
+    return res.json({ success: true, message: 'Booking deleted successfully' });
+  } catch (err) {
+    if (err.code === 'P2025') {
+      return res.status(404).json({ success: false, message: 'Booking not found' });
+    }
+    next(err);
+  }
+}
+
+// Bulk Delete
+async function deleteBulkBookings(req, res, next) {
+  try {
+    const { ids } = req.body;
+    if (!ids || !Array.isArray(ids) || ids.length === 0) {
+      return res.status(400).json({ success: false, message: "Invalid or empty ids array" });
+    }
+
+    await prisma.booking.deleteMany({
+      where: { id: { in: ids } }
+    });
+
+    return res.json({ 
+      success: true, 
+      message: `${ids.length} bookings deleted successfully` 
+    });
   } catch (err) {
     next(err);
   }
 }
 
-module.exports = { createBooking, getAllBookings, getBookingById, updateBookingStatus, deleteBooking };
+// GET /api/bookings/stats
+async function getBookingStats(req, res, next) {
+  try {
+    const [total, confirmed, pending, cancelled] = await Promise.all([
+      prisma.booking.count(),
+      prisma.booking.count({ where: { status: 'CONFIRMED' } }),
+      prisma.booking.count({ where: { status: 'PENDING' } }),
+      prisma.booking.count({ where: { status: 'CANCELLED' } }),
+    ]);
+
+    return res.json({
+      success: true,
+      data: { total, confirmed, pending, cancelled },
+    });
+  } catch (err) {
+    next(err);
+  }
+}
+
+// Export all functions
+module.exports = {
+  createBooking,
+  getAllBookings,
+  getBookingById,
+  updateBooking,           // ← Now properly exported
+  updateBookingStatus,
+  deleteBooking,
+  deleteBulkBookings,      // ← Added
+  getBookingStats,
+};

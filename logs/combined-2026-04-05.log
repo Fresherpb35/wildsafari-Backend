@@ -1,0 +1,213 @@
+2026-04-05 23:09:55 [error]: PrismaClientInitializationError: Can't reach database server at `aws-1-ap-northeast-2.pooler.supabase.com:6543`
+
+Please make sure your database server is running at `aws-1-ap-northeast-2.pooler.supabase.com:6543`.
+    at t (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:112:2488)
+    at async startServer (C:\Users\akshi\Videos\wild-main\backend\src\server.js:13:5)
+2026-04-05 23:10:33 [info]: 📧 Email transporter ready
+2026-04-05 23:10:33 [info]: ✅ Database connected
+2026-04-05 23:10:33 [info]: 🚀 Server running on port 5000 [development]
+2026-04-05 23:10:37 [error]: Error: CORS: http://localhost:3001 not allowed
+    at origin (C:\Users\akshi\Videos\wild-main\backend\src\app.js:38:16)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\akshi\Videos\wild-main\backend\node_modules\helmet\index.cjs:537:6)
+2026-04-05 23:10:38 [error]: Error: CORS: http://localhost:3001 not allowed
+    at origin (C:\Users\akshi\Videos\wild-main\backend\src\app.js:38:16)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\akshi\Videos\wild-main\backend\node_modules\helmet\index.cjs:537:6)
+2026-04-05 23:10:38 [error]: Error: CORS: http://localhost:3001 not allowed
+    at origin (C:\Users\akshi\Videos\wild-main\backend\src\app.js:38:16)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\akshi\Videos\wild-main\backend\node_modules\helmet\index.cjs:537:6)
+2026-04-05 23:10:41 [http]: ::1 - - [05/Apr/2026:17:40:41 +0000] "GET /favicon.ico HTTP/1.1" 404 58 "http://localhost:3001/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:11:08 [error]: Error: CORS: http://localhost:3001 not allowed
+    at origin (C:\Users\akshi\Videos\wild-main\backend\src\app.js:38:16)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\akshi\Videos\wild-main\backend\node_modules\helmet\index.cjs:537:6)
+2026-04-05 23:11:10 [error]: Error: CORS: http://localhost:3001 not allowed
+    at origin (C:\Users\akshi\Videos\wild-main\backend\src\app.js:38:16)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\akshi\Videos\wild-main\backend\node_modules\helmet\index.cjs:537:6)
+2026-04-05 23:11:10 [error]: Error: CORS: http://localhost:3001 not allowed
+    at origin (C:\Users\akshi\Videos\wild-main\backend\src\app.js:38:16)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\Users\akshi\Videos\wild-main\backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\akshi\Videos\wild-main\backend\node_modules\express\lib\router\index.js:280:10)
+    at internalNext (C:\Users\akshi\Videos\wild-main\backend\node_modules\helmet\index.cjs:537:6)
+2026-04-05 23:14:20 [http]: ::1 - - [05/Apr/2026:17:44:20 +0000] "GET /favicon.ico HTTP/1.1" 404 58 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:14:20 [info]: SIGINT received — shutting down gracefully
+2026-04-05 23:14:31 [info]: 📧 Email transporter ready
+2026-04-05 23:14:33 [info]: ✅ Database connected
+2026-04-05 23:14:33 [info]: 🚀 Server running on port 5000 [development]
+2026-04-05 23:15:26 [http]: ::1 - - [05/Apr/2026:17:45:26 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:15:28 [http]: ::1 - - [05/Apr/2026:17:45:28 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:15:28 [http]: ::1 - - [05/Apr/2026:17:45:28 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:15:28 [http]: ::1 - - [05/Apr/2026:17:45:28 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:20:10 [http]: ::1 - - [05/Apr/2026:17:50:10 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:20:11 [http]: ::1 - - [05/Apr/2026:17:50:11 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:20:11 [http]: ::1 - - [05/Apr/2026:17:50:11 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:55 [http]: ::1 - - [05/Apr/2026:17:52:55 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:56 [http]: ::1 - - [05/Apr/2026:17:52:56 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:56 [http]: ::1 - - [05/Apr/2026:17:52:56 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:56 [http]: ::1 - - [05/Apr/2026:17:52:56 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:56 [http]: ::1 - - [05/Apr/2026:17:52:56 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:57 [http]: ::1 - - [05/Apr/2026:17:52:57 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:57 [http]: ::1 - - [05/Apr/2026:17:52:57 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:57 [http]: ::1 - - [05/Apr/2026:17:52:57 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:57 [http]: ::1 - - [05/Apr/2026:17:52:57 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:57 [http]: ::1 - - [05/Apr/2026:17:52:57 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:57 [http]: ::1 - - [05/Apr/2026:17:52:57 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:58 [http]: ::1 - - [05/Apr/2026:17:52:58 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:58 [http]: ::1 - - [05/Apr/2026:17:52:58 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:22:58 [http]: ::1 - - [05/Apr/2026:17:52:58 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:24:28 [http]: ::1 - - [05/Apr/2026:17:54:28 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:24:28 [http]: ::1 - - [05/Apr/2026:17:54:28 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:24:28 [http]: ::1 - - [05/Apr/2026:17:54:28 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:24:29 [http]: ::1 - - [05/Apr/2026:17:54:29 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:24:38 [info]: SIGINT received — shutting down gracefully
+2026-04-05 23:25:08 [info]: 📧 Email transporter ready
+2026-04-05 23:25:09 [info]: ✅ Database connected
+2026-04-05 23:25:09 [info]: 🚀 Server running on port 5000 [development]
+2026-04-05 23:25:10 [http]: ::1 - - [05/Apr/2026:17:55:10 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:25:10 [http]: ::1 - - [05/Apr/2026:17:55:10 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:25:11 [http]: ::1 - - [05/Apr/2026:17:55:11 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:25:11 [http]: ::1 - - [05/Apr/2026:17:55:11 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:25:15 [http]: ::1 - - [05/Apr/2026:17:55:15 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:25:35 [http]: ::1 - - [05/Apr/2026:17:55:35 +0000] "GET /api/auth/login HTTP/1.1" 404 61 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-05 23:26:55 [http]: ::1 - - [05/Apr/2026:17:56:55 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:00 [http]: ::1 - - [05/Apr/2026:17:57:00 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:06 [http]: ::1 - - [05/Apr/2026:17:57:06 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:06 [http]: ::1 - - [05/Apr/2026:17:57:06 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:06 [http]: ::1 - - [05/Apr/2026:17:57:06 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:06 [http]: ::1 - - [05/Apr/2026:17:57:06 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:07 [http]: ::1 - - [05/Apr/2026:17:57:07 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:07 [http]: ::1 - - [05/Apr/2026:17:57:07 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:07 [http]: ::1 - - [05/Apr/2026:17:57:07 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:07 [http]: ::1 - - [05/Apr/2026:17:57:07 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:07 [http]: ::1 - - [05/Apr/2026:17:57:07 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:27:07 [http]: ::1 - - [05/Apr/2026:17:57:07 +0000] "POST /api/auth/login HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:28:34 [warn]: Slow query (282ms): SELECT 1
+2026-04-05 23:28:35 [warn]: Slow query (255ms): BEGIN
+2026-04-05 23:28:35 [warn]: Slow query (321ms): DEALLOCATE ALL
+2026-04-05 23:28:36 [warn]: Slow query (533ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:28:36 [warn]: Slow query (481ms): COMMIT
+2026-04-05 23:28:36 [http]: ::1 - - [05/Apr/2026:17:58:36 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:29:18 [warn]: Slow query (594ms): SELECT 1
+2026-04-05 23:29:18 [warn]: Slow query (469ms): BEGIN
+2026-04-05 23:29:19 [warn]: Slow query (284ms): DEALLOCATE ALL
+2026-04-05 23:29:20 [warn]: Slow query (1428ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:29:20 [warn]: Slow query (333ms): COMMIT
+2026-04-05 23:29:20 [http]: ::1 - - [05/Apr/2026:17:59:20 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:31:21 [info]: SIGINT received — shutting down gracefully
+2026-04-05 23:32:32 [info]: ✅ Database connected
+2026-04-05 23:32:32 [info]: 🚀 Server running on port 5000 [development]
+2026-04-05 23:32:32 [info]: 📧 Email transporter ready
+2026-04-05 23:32:42 [warn]: Slow query (316ms): BEGIN
+2026-04-05 23:32:42 [warn]: Slow query (269ms): DEALLOCATE ALL
+2026-04-05 23:32:43 [warn]: Slow query (530ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:32:43 [warn]: Slow query (486ms): COMMIT
+2026-04-05 23:32:44 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:32:44 [http]: ::1 - - [05/Apr/2026:18:02:44 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:33:57 [warn]: Slow query (459ms): SELECT 1
+2026-04-05 23:33:58 [warn]: Slow query (408ms): BEGIN
+2026-04-05 23:33:58 [warn]: Slow query (284ms): DEALLOCATE ALL
+2026-04-05 23:33:58 [warn]: Slow query (530ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:33:59 [warn]: Slow query (271ms): COMMIT
+2026-04-05 23:33:59 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:33:59 [http]: ::1 - - [05/Apr/2026:18:03:59 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:34:00 [warn]: Slow query (276ms): BEGIN
+2026-04-05 23:34:01 [warn]: Slow query (717ms): DEALLOCATE ALL
+2026-04-05 23:34:01 [warn]: Slow query (616ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:34:02 [warn]: Slow query (438ms): COMMIT
+2026-04-05 23:34:02 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:34:02 [http]: ::1 - - [05/Apr/2026:18:04:02 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:34:04 [warn]: Slow query (273ms): BEGIN
+2026-04-05 23:34:04 [warn]: Slow query (263ms): DEALLOCATE ALL
+2026-04-05 23:34:05 [warn]: Slow query (522ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:34:05 [warn]: Slow query (465ms): COMMIT
+2026-04-05 23:34:05 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:34:05 [http]: ::1 - - [05/Apr/2026:18:04:05 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:34:06 [warn]: Slow query (270ms): BEGIN
+2026-04-05 23:34:07 [warn]: Slow query (254ms): DEALLOCATE ALL
+2026-04-05 23:34:07 [warn]: Slow query (522ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:34:07 [warn]: Slow query (403ms): COMMIT
+2026-04-05 23:34:07 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:34:07 [http]: ::1 - - [05/Apr/2026:18:04:07 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:34:11 [warn]: Slow query (270ms): BEGIN
+2026-04-05 23:34:11 [warn]: Slow query (364ms): DEALLOCATE ALL
+2026-04-05 23:34:12 [warn]: Slow query (531ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:34:12 [warn]: Slow query (541ms): COMMIT
+2026-04-05 23:34:12 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:34:12 [http]: ::1 - - [05/Apr/2026:18:04:12 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:36:39 [warn]: Slow query (457ms): SELECT 1
+2026-04-05 23:36:39 [warn]: Slow query (358ms): BEGIN
+2026-04-05 23:36:40 [warn]: Slow query (471ms): DEALLOCATE ALL
+2026-04-05 23:36:40 [warn]: Slow query (683ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:36:41 [warn]: Slow query (414ms): COMMIT
+2026-04-05 23:36:41 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:36:41 [http]: ::1 - - [05/Apr/2026:18:06:41 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:38:12 [info]: SIGINT received — shutting down gracefully
+2026-04-05 23:39:47 [info]: 📧 Email transporter ready
+2026-04-05 23:39:47 [info]: ✅ Database connected
+2026-04-05 23:39:47 [info]: 🚀 Server running on port 5000 [development]
+2026-04-05 23:39:48 [warn]: Slow query (261ms): BEGIN
+2026-04-05 23:39:49 [warn]: Slow query (253ms): DEALLOCATE ALL
+2026-04-05 23:39:49 [warn]: Slow query (924ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:39:50 [warn]: Slow query (423ms): COMMIT
+2026-04-05 23:39:50 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:39:50 [http]: ::1 - - [05/Apr/2026:18:09:50 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:42:11 [info]: SIGINT received — shutting down gracefully
+2026-04-05 23:42:32 [info]: ✅ Database connected
+2026-04-05 23:42:32 [info]: 🚀 Server running on port 5000 [development]
+2026-04-05 23:42:34 [info]: 📧 Email transporter ready
+2026-04-05 23:42:44 [warn]: Slow query (328ms): BEGIN
+2026-04-05 23:42:44 [warn]: Slow query (271ms): DEALLOCATE ALL
+2026-04-05 23:42:45 [warn]: Slow query (548ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:42:45 [warn]: Slow query (293ms): COMMIT
+2026-04-05 23:42:45 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:42:45 [http]: ::1 - - [05/Apr/2026:18:12:45 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
+2026-04-05 23:42:47 [warn]: Slow query (301ms): BEGIN
+2026-04-05 23:42:47 [warn]: Slow query (461ms): DEALLOCATE ALL
+2026-04-05 23:42:49 [warn]: Slow query (1442ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-05 23:42:49 [warn]: Slow query (693ms): COMMIT
+2026-04-05 23:42:49 [warn]: Failed login attempt for: admin@wildlifesafariindia.com
+2026-04-05 23:42:49 [http]: ::1 - - [05/Apr/2026:18:12:49 +0000] "POST /api/admin/login HTTP/1.1" 401 49 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"

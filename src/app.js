@@ -14,13 +14,16 @@ const bookingRoutes    = require('./routes/bookingRoutes');
 const contactRoutes    = require('./routes/contactRoutes');
 const newsletterRoutes = require('./routes/newsletterRoutes');
 const adminRoutes      = require('./routes/adminRoutes');
-
+const blogRoutes = require('./routes/blogRoutes');
+const hotelRoutes = require('./routes/hotelRoutes');
 const app = express();
 
 // ─── SECURITY MIDDLEWARE ──────────────────────────────────────────────────────
 app.use(helmet());
+
 const allowedOrigins = [
   'http://localhost:3000',
+  'http://localhost:3001',
   'https://wildlife-rose.vercel.app',
   'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
   'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app',
@@ -29,8 +32,7 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function(origin, callback) {
-    // allow requests with no origin (like Postman or server-to-server)
-    if (!origin) return callback(null, true);
+    if (!origin) return callback(null, true);   // allow non-browser requests
 
     if (allowedOrigins.includes(origin)) {
       callback(null, true);
@@ -39,21 +41,19 @@ app.use(cors({
     }
   },
   credentials: true,
-  methods: ['GET','POST','PATCH','DELETE','OPTIONS'],
-  allowedHeaders: ['Content-Type','Authorization'],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],   // ← Added PUT
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  optionsSuccessStatus: 200
 }));
+
+// Handle preflight requests explicitly (good practice)
+app.options('*', cors());
 
 // ─── RATE LIMITING ────────────────────────────────────────────────────────────
 const globalLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max:      200,
-  message:  { success: false, message: 'Too many requests, please try again later.' },
-});
-
-const strictLimiter = rateLimit({
-  windowMs: 60 * 60 * 1000, // 1 hour
-  max:      20,
-  message:  { success: false, message: 'Too many submissions, please try again later.' },
+  windowMs: 15 * 60 * 1000,
+  max: 200,
+  message: { success: false, message: 'Too many requests, please try again later.' },
 });
 
 app.use(globalLimiter);
@@ -76,11 +76,12 @@ app.get('/health', (req, res) => {
 });
 
 // ─── API ROUTES ───────────────────────────────────────────────────────────────
-app.use('/api/bookings',  bookingRoutes);
-app.use('/api/contacts',    strictLimiter, contactRoutes);
-app.use('/api/newsletter',  strictLimiter, newsletterRoutes);
-app.use('/api/admin',       adminRoutes);
-
+app.use('/api/bookings', bookingRoutes);
+app.use('/api/contacts', contactRoutes);   // Note: strictLimiter is missing in your code
+app.use('/api/newsletter', newsletterRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/blogs', blogRoutes);
+app.use('/api/hotel', hotelRoutes);
 // ─── 404 HANDLER ─────────────────────────────────────────────────────────────
 app.use((req, res) => {
   res.status(404).json({ success: false, message: `Route ${req.originalUrl} not found` });

@@ -13,7 +13,7 @@
     "db:seed": "node prisma/seed.js"
   },
   "dependencies": {
-    "@prisma/client": "^5.22.0",
+    "@prisma/adapter-pg": "^7.6.0",
     "@supabase/supabase-js": "^2.39.7",
     "async": "^3.2.6",
     "bcryptjs": "^2.4.3",
@@ -31,7 +31,10 @@
     "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
+    "@prisma/client": "^5.22.0",
+    "i": "^0.3.7",
     "nodemon": "^3.1.0",
+    "npm": "^11.12.1",
     "prisma": "^5.22.0"
   },
   "engines": {
