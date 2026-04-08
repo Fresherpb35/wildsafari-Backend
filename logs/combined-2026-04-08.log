@@ -40,3 +40,7 @@
 2026-04-08 10:42:57 [warn]: Slow query (243ms): SELECT "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt" FROM "public"."blogs" WHERE "public"."blogs"."published" = $1 ORDER BY "public"."blogs"."createdAt" DESC OFFSET $2
 2026-04-08 10:42:57 [http]: ::1 - - [08/Apr/2026:05:12:57 +0000] "GET /api/blogs?published=true HTTP/1.1" 304 - "http://localhost:3001/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 Edg/146.0.0.0"
 2026-04-08 10:43:58 [info]: SIGINT received — shutting down gracefully
+2026-04-08 10:55:30 [info]: 📧 Email transporter ready
+2026-04-08 10:55:30 [info]: ✅ Database connected
+2026-04-08 10:55:30 [info]: 🚀 Server running on port 5000 [development]
+2026-04-08 10:57:54 [info]: SIGINT received — shutting down gracefully
