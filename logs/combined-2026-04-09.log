@@ -1,0 +1,249 @@
+2026-04-09 00:03:59 [info]: SIGINT received — shutting down gracefully
+2026-04-09 00:04:07 [info]: 📧 Email transporter ready
+2026-04-09 00:04:07 [info]: ✅ Database connected
+2026-04-09 00:04:07 [info]: 🚀 Server running on port 5000 [development]
+2026-04-09 00:04:52 [warn]: Slow query (236ms): SELECT 1
+2026-04-09 00:04:52 [warn]: Slow query (488ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-09 00:04:53 [info]: Admin logged in: admin@wildlifesafariindia.com
+2026-04-09 00:04:53 [http]: ::1 - - [08/Apr/2026:18:34:53 +0000] "POST /api/admin/login HTTP/1.1" 200 387 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:53 [http]: ::1 - - [08/Apr/2026:18:34:53 +0000] "GET /api/gallery HTTP/1.1" 404 58 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:53 [http]: ::1 - - [08/Apr/2026:18:34:53 +0000] "GET /api/site-info HTTP/1.1" 404 60 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:53 [http]: ::1 - - [08/Apr/2026:18:34:53 +0000] "GET /api/gallery HTTP/1.1" 404 58 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:53 [http]: ::1 - - [08/Apr/2026:18:34:53 +0000] "GET /api/site-info HTTP/1.1" 404 60 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:54 [warn]: Slow query (668ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:04:56 [warn]: Slow query (439ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (441ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (454ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (455ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [http]: ::1 - - [08/Apr/2026:18:34:56 +0000] "GET /api/bookings/stats HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:56 [warn]: Slow query (458ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (457ms): SELECT "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt" FROM "public"."blogs" WHERE 1=1 ORDER BY "public"."blogs"."createdAt" DESC OFFSET $1
+2026-04-09 00:04:56 [http]: ::1 - - [08/Apr/2026:18:34:56 +0000] "GET /api/bookings HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:56 [http]: ::1 - - [08/Apr/2026:18:34:56 +0000] "GET /api/blogs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:56 [warn]: Slow query (216ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (219ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (220ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (446ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (448ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:04:56 [http]: ::1 - - [08/Apr/2026:18:34:56 +0000] "GET /api/bookings/stats HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:56 [warn]: Slow query (439ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:04:56 [http]: ::1 - - [08/Apr/2026:18:34:56 +0000] "GET /api/bookings HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:56 [warn]: Slow query (454ms): SELECT "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt" FROM "public"."blogs" WHERE 1=1 ORDER BY "public"."blogs"."createdAt" DESC OFFSET $1
+2026-04-09 00:04:56 [http]: ::1 - - [08/Apr/2026:18:34:56 +0000] "GET /api/blogs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:56 [warn]: Slow query (222ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (435ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (436ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (436ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:04:56 [warn]: Slow query (443ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:04:56 [http]: ::1 - - [08/Apr/2026:18:34:56 +0000] "GET /api/bookings HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:56 [warn]: Slow query (455ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:56 [http]: ::1 - - [08/Apr/2026:18:34:56 +0000] "GET /api/bookings/stats HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:57 [warn]: Slow query (223ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:04:57 [warn]: Slow query (222ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:57 [warn]: Slow query (222ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:57 [warn]: Slow query (226ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:04:57 [http]: ::1 - - [08/Apr/2026:18:34:57 +0000] "GET /api/bookings/stats HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:04:57 [warn]: Slow query (445ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:04:57 [warn]: Slow query (447ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:04:57 [http]: ::1 - - [08/Apr/2026:18:34:57 +0000] "GET /api/bookings HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:12:43 [warn]: Slow query (468ms): SELECT "public"."admins"."id", "public"."admins"."email", "public"."admins"."passwordHash", "public"."admins"."name", "public"."admins"."createdAt", "public"."admins"."updatedAt" FROM "public"."admins" WHERE ("public"."admins"."email" = $1 AND 1=1) LIMIT $2 OFFSET $3
+2026-04-09 00:12:44 [info]: Admin logged in: admin@wildlifesafariindia.com
+2026-04-09 00:12:44 [http]: ::1 - - [08/Apr/2026:18:42:44 +0000] "POST /api/admin/login HTTP/1.1" 200 387 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:44 [http]: ::1 - - [08/Apr/2026:18:42:44 +0000] "GET /api/gallery HTTP/1.1" 404 58 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:44 [http]: ::1 - - [08/Apr/2026:18:42:44 +0000] "GET /api/site-info HTTP/1.1" 404 60 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:44 [warn]: Slow query (657ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:12:46 [warn]: Slow query (452ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:12:46 [warn]: Slow query (507ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:12:46 [warn]: Slow query (512ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:12:46 [warn]: Slow query (512ms): SELECT "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt" FROM "public"."blogs" WHERE 1=1 ORDER BY "public"."blogs"."createdAt" DESC OFFSET $1
+2026-04-09 00:12:46 [warn]: Slow query (507ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:12:46 [http]: ::1 - - [08/Apr/2026:18:42:46 +0000] "GET /api/bookings HTTP/1.1" 200 728 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:46 [http]: ::1 - - [08/Apr/2026:18:42:46 +0000] "GET /api/blogs HTTP/1.1" 200 353 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:46 [warn]: Slow query (485ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:12:46 [http]: ::1 - - [08/Apr/2026:18:42:46 +0000] "GET /api/bookings/stats HTTP/1.1" 200 75 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:46 [warn]: Slow query (220ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:12:47 [warn]: Slow query (231ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:12:47 [warn]: Slow query (232ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:12:47 [warn]: Slow query (505ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:12:47 [warn]: Slow query (511ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:12:47 [http]: ::1 - - [08/Apr/2026:18:42:47 +0000] "GET /api/bookings HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:47 [warn]: Slow query (478ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:12:47 [http]: ::1 - - [08/Apr/2026:18:42:47 +0000] "GET /api/bookings/stats HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:51 [warn]: Slow query (702ms): SELECT "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt" FROM "public"."blogs" WHERE 1=1 ORDER BY "public"."blogs"."createdAt" DESC OFFSET $1
+2026-04-09 00:12:51 [warn]: Slow query (701ms): SELECT "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt" FROM "public"."hotels" WHERE "public"."hotels"."isActive" = $1 ORDER BY "public"."hotels"."sortOrder" ASC, "public"."hotels"."createdAt" DESC OFFSET $2
+2026-04-09 00:12:51 [http]: ::1 - - [08/Apr/2026:18:42:51 +0000] "GET /api/blogs HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:12:51 [http]: ::1 - - [08/Apr/2026:18:42:51 +0000] "GET /api/hotels HTTP/1.1" 200 585 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:13:10 [warn]: Slow query (281ms): SELECT 1
+2026-04-09 00:13:10 [warn]: Slow query (283ms): SELECT 1
+2026-04-09 00:13:10 [warn]: Slow query (282ms): SELECT 1
+2026-04-09 00:13:10 [warn]: Slow query (282ms): SELECT 1
+2026-04-09 00:13:10 [warn]: Slow query (284ms): SELECT 1
+2026-04-09 00:13:10 [warn]: Slow query (282ms): SELECT 1
+2026-04-09 00:13:11 [warn]: Slow query (332ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:11 [warn]: Slow query (332ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:11 [warn]: Slow query (553ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:11 [warn]: Slow query (563ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:13:11 [warn]: Slow query (563ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:13:11 [warn]: Slow query (563ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:13:11 [http]: ::1 - - [08/Apr/2026:18:43:11 +0000] "GET /api/bookings/stats HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:13:11 [http]: ::1 - - [08/Apr/2026:18:43:11 +0000] "GET /api/bookings HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:13:24 [warn]: Slow query (275ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:24 [warn]: Slow query (280ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:24 [warn]: Slow query (285ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:24 [warn]: Slow query (287ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:13:24 [warn]: Slow query (290ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:13:24 [warn]: Slow query (288ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:13:24 [http]: ::1 - - [08/Apr/2026:18:43:24 +0000] "GET /api/bookings HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:13:24 [http]: ::1 - - [08/Apr/2026:18:43:24 +0000] "GET /api/bookings/stats HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:13:29 [warn]: Slow query (343ms): SELECT 1
+2026-04-09 00:13:29 [warn]: Slow query (349ms): SELECT 1
+2026-04-09 00:13:29 [warn]: Slow query (345ms): SELECT 1
+2026-04-09 00:13:29 [warn]: Slow query (345ms): SELECT 1
+2026-04-09 00:13:29 [warn]: Slow query (345ms): SELECT 1
+2026-04-09 00:13:29 [warn]: Slow query (350ms): SELECT 1
+2026-04-09 00:13:29 [warn]: Slow query (384ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:29 [warn]: Slow query (385ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:13:29 [warn]: Slow query (384ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:29 [warn]: Slow query (385ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE "public"."bookings"."status" = CAST($1::text AS "public"."BookingStatus") OFFSET $2) AS "sub"
+2026-04-09 00:13:29 [warn]: Slow query (385ms): SELECT COUNT(*) FROM (SELECT "public"."bookings"."id" FROM "public"."bookings" WHERE 1=1 OFFSET $1) AS "sub"
+2026-04-09 00:13:29 [warn]: Slow query (385ms): SELECT "public"."bookings"."id", "public"."bookings"."name", "public"."bookings"."email", "public"."bookings"."phone", "public"."bookings"."safariDate", "public"."bookings"."safariType"::text, "public"."bookings"."safariZone", "public"."bookings"."safariTime"::text, "public"."bookings"."status"::text, "public"."bookings"."notes", "public"."bookings"."createdAt", "public"."bookings"."updatedAt" FROM "public"."bookings" WHERE 1=1 ORDER BY "public"."bookings"."createdAt" DESC LIMIT $1 OFFSET $2
+2026-04-09 00:13:29 [http]: ::1 - - [08/Apr/2026:18:43:29 +0000] "GET /api/bookings/stats HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:13:29 [http]: ::1 - - [08/Apr/2026:18:43:29 +0000] "GET /api/bookings HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:13:30 [warn]: Slow query (368ms): SELECT "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt" FROM "public"."hotels" WHERE "public"."hotels"."isActive" = $1 ORDER BY "public"."hotels"."sortOrder" ASC, "public"."hotels"."createdAt" DESC OFFSET $2
+2026-04-09 00:13:30 [http]: ::1 - - [08/Apr/2026:18:43:30 +0000] "GET /api/hotels HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:13:30 [warn]: Slow query (414ms): SELECT "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt" FROM "public"."blogs" WHERE 1=1 ORDER BY "public"."blogs"."createdAt" DESC OFFSET $1
+2026-04-09 00:13:30 [http]: ::1 - - [08/Apr/2026:18:43:30 +0000] "GET /api/blogs HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:16:26 [warn]: Slow query (402ms): SELECT 1
+2026-04-09 00:16:27 [warn]: Slow query (892ms): UPDATE "public"."blogs" SET "published" = $1, "updatedAt" = $2 WHERE ("public"."blogs"."id" = $3 AND 1=1) RETURNING "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."content", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt", "public"."blogs"."updatedAt"
+2026-04-09 00:16:27 [http]: ::1 - - [08/Apr/2026:18:46:27 +0000] "PUT /api/blogs/cmnpwf2us0002xcilvia2gfs9 HTTP/1.1" 200 450 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:16:57 [warn]: Slow query (497ms): SELECT 1
+2026-04-09 00:16:58 [warn]: Slow query (778ms): UPDATE "public"."blogs" SET "published" = $1, "publishedAt" = $2, "updatedAt" = $3 WHERE ("public"."blogs"."id" = $4 AND 1=1) RETURNING "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."content", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt", "public"."blogs"."updatedAt"
+2026-04-09 00:16:58 [http]: ::1 - - [08/Apr/2026:18:46:58 +0000] "PUT /api/blogs/cmnpwf2us0002xcilvia2gfs9 HTTP/1.1" 200 449 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:17:49 [warn]: Slow query (448ms): DELETE FROM "public"."hotels" WHERE ("public"."hotels"."id" = $1 AND 1=1) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:17:49 [http]: ::1 - - [08/Apr/2026:18:47:49 +0000] "DELETE /api/hotels/cmnpxvg7j0003xcilio3dw0wo HTTP/1.1" 200 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:17:49 [warn]: Slow query (281ms): DELETE FROM "public"."hotels" WHERE ("public"."hotels"."id" = $1 AND 1=1) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:17:49 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:49 [http]: ::1 - - [08/Apr/2026:18:47:49 +0000] "DELETE /api/hotels/cmnpxvg7j0003xcilio3dw0wo HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:17:49 [warn]: Slow query (232ms): DELETE FROM "public"."hotels" WHERE ("public"."hotels"."id" = $1 AND 1=1) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:17:49 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:49 [http]: ::1 - - [08/Apr/2026:18:47:49 +0000] "DELETE /api/hotels/cmnpxvg7j0003xcilio3dw0wo HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:17:50 [warn]: Slow query (438ms): DELETE FROM "public"."hotels" WHERE ("public"."hotels"."id" = $1 AND 1=1) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:17:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:50 [http]: ::1 - - [08/Apr/2026:18:47:50 +0000] "DELETE /api/hotels/cmnpxvg7j0003xcilio3dw0wo HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:17:50 [warn]: Slow query (419ms): DELETE FROM "public"."hotels" WHERE ("public"."hotels"."id" = $1 AND 1=1) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:17:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:50 [http]: ::1 - - [08/Apr/2026:18:47:50 +0000] "DELETE /api/hotels/cmnpxvg7j0003xcilio3dw0wo HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:17:50 [warn]: Slow query (436ms): DELETE FROM "public"."hotels" WHERE ("public"."hotels"."id" = $1 AND 1=1) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:17:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:50 [http]: ::1 - - [08/Apr/2026:18:47:50 +0000] "DELETE /api/hotels/cmnpxvg7j0003xcilio3dw0wo HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:17:51 [warn]: Slow query (437ms): DELETE FROM "public"."hotels" WHERE ("public"."hotels"."id" = $1 AND 1=1) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:17:51 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:51 [http]: ::1 - - [08/Apr/2026:18:47:51 +0000] "DELETE /api/hotels/cmnpxvg7j0003xcilio3dw0wo HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:17:51 [warn]: Slow query (437ms): DELETE FROM "public"."hotels" WHERE ("public"."hotels"."id" = $1 AND 1=1) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:17:51 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:51 [http]: ::1 - - [08/Apr/2026:18:47:51 +0000] "DELETE /api/hotels/cmnpxvg7j0003xcilio3dw0wo HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:18:07 [warn]: Slow query (472ms): SELECT 1
+2026-04-09 00:18:07 [warn]: Slow query (474ms): SELECT 1
+2026-04-09 00:18:08 [warn]: Slow query (661ms): SELECT "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt" FROM "public"."blogs" WHERE 1=1 ORDER BY "public"."blogs"."createdAt" DESC OFFSET $1
+2026-04-09 00:18:08 [warn]: Slow query (662ms): SELECT "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt" FROM "public"."hotels" WHERE "public"."hotels"."isActive" = $1 ORDER BY "public"."hotels"."sortOrder" ASC, "public"."hotels"."createdAt" DESC OFFSET $2
+2026-04-09 00:18:08 [http]: ::1 - - [08/Apr/2026:18:48:08 +0000] "GET /api/blogs HTTP/1.1" 200 353 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:18:08 [http]: ::1 - - [08/Apr/2026:18:48:08 +0000] "GET /api/hotels HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:18:09 [warn]: Slow query (649ms): SELECT "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt" FROM "public"."hotels" WHERE "public"."hotels"."isActive" = $1 ORDER BY "public"."hotels"."sortOrder" ASC, "public"."hotels"."createdAt" DESC OFFSET $2
+2026-04-09 00:18:09 [warn]: Slow query (651ms): SELECT "public"."blogs"."id", "public"."blogs"."title", "public"."blogs"."slug", "public"."blogs"."excerpt", "public"."blogs"."imageUrl", "public"."blogs"."category", "public"."blogs"."tag", "public"."blogs"."readTime", "public"."blogs"."color", "public"."blogs"."imageEmoji", "public"."blogs"."author", "public"."blogs"."published", "public"."blogs"."publishedAt", "public"."blogs"."createdAt" FROM "public"."blogs" WHERE 1=1 ORDER BY "public"."blogs"."createdAt" DESC OFFSET $1
+2026-04-09 00:18:09 [http]: ::1 - - [08/Apr/2026:18:48:09 +0000] "GET /api/hotels HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:18:09 [http]: ::1 - - [08/Apr/2026:18:48:09 +0000] "GET /api/blogs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0"
+2026-04-09 00:18:57 [warn]: Slow query (327ms): SELECT 1
+2026-04-09 00:18:57 [warn]: Slow query (608ms): INSERT INTO "public"."hotels" ("id","name","img","tag","desc","sortOrder","isActive","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
+2026-04-09 00:18:57 [http]: ::1 - - [08/Apr/2026:18:48:57 +0000] "POST /api/hotels HTTP/1.1" 200 702 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+2026-04-09 00:29:57 [info]: SIGINT received — shutting down gracefully

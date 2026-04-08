@@ -1,0 +1,98 @@
+2026-04-09 00:17:49 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:49 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:50 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:51 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
+2026-04-09 00:17:51 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.hotel.delete()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:30
+
+  42 async function deleteHotel(req, res, next) {
+  43   try {
+  44     const { id } = req.params;
+→ 45     await prisma.hotel.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async deleteHotel (C:\Users\akshi\Videos\wild-main\backend\src\controllers\hotelController.js:45:5)
