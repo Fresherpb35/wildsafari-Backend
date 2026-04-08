@@ -1,4 +1,4 @@
-const { prisma } = require('../config/db');
+const prisma = require('../config/db');
 const logger = require('../config/logger');
 
 // POST /api/blogs - Create Blog
