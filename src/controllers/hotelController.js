@@ -1,64 +1,52 @@
 const { prisma } = require('../config/db');
 
-// Since there's usually only one hotel record, we'll use upsert logic
-async function getHotelContent(req, res, next) {
+async function getAllHotels(req, res, next) {
   try {
-    let hotel = await prisma.hotelContent.findFirst();
-    if (!hotel) {
-      hotel = await prisma.hotelContent.create({
-        data: {
-          hotelName: "Wildlife Rose Safari Resort",
-          description: "",
-          contactEmail: "",
-          phone: "",
-          address: "",
-          websiteTitle: "",
-          welcomeText: "",
-          aboutSection: "",
-          images: [],
-        }
-      });
-    }
-    res.json({ success: true, data: hotel });
-  } catch (err) {
-    next(err);
-  }
-}
-
-async function updateHotelContent(req, res, next) {
-  try {
-    const data = req.body;
-
-    const hotel = await prisma.hotelContent.upsert({
-      where: { id: data.id || 'default' }, // fallback if no id
-      update: {
-        hotelName: data.hotelName,
-        description: data.description,
-        contactEmail: data.contactEmail,
-        phone: data.phone,
-        address: data.address,
-        websiteTitle: data.websiteTitle,
-        welcomeText: data.welcomeText,
-        aboutSection: data.aboutSection,
-        images: data.images || [],
-      },
-      create: {
-        hotelName: data.hotelName || "Wildlife Rose Safari Resort",
-        description: data.description || "",
-        contactEmail: data.contactEmail,
-        phone: data.phone,
-        address: data.address,
-        websiteTitle: data.websiteTitle,
-        welcomeText: data.welcomeText,
-        aboutSection: data.aboutSection,
-        images: data.images || [],
-      },
+    const hotels = await prisma.hotel.findMany({
+      where: { isActive: true },
+      orderBy: [{ sortOrder: 'asc' }, { createdAt: 'desc' }]
     });
-
-    res.json({ success: true, message: "Hotel content updated", data: hotel });
+    res.json({ success: true, data: hotels });
   } catch (err) {
     next(err);
   }
 }
 
-module.exports = { getHotelContent, updateHotelContent };
+async function createHotel(req, res, next) {
+  try {
+    const { name, img, tag, desc, sortOrder } = req.body;
+    const hotel = await prisma.hotel.create({
+      data: { name, img, tag, desc, sortOrder: sortOrder || 0 }
+    });
+    res.json({ success: true, message: "Hotel created", data: hotel });
+  } catch (err) {
+    next(err);
+  }
+}
+
+async function updateHotel(req, res, next) {
+  try {
+    const { id } = req.params;
+    const { name, img, tag, desc, sortOrder, isActive } = req.body;
+
+    const hotel = await prisma.hotel.update({
+      where: { id },
+      data: { name, img, tag, desc, sortOrder, isActive }
+    });
+    res.json({ success: true, message: "Hotel updated", data: hotel });
+  } catch (err) {
+    next(err);
+  }
+}
+
+async function deleteHotel(req, res, next) {
+  try {
+    const { id } = req.params;
+    await prisma.hotel.delete({ where: { id } });
+    res.json({ success: true, message: "Hotel deleted" });
+  } catch (err) {
+    next(err);
+  }
+}
+
+module.exports = { getAllHotels, createHotel, updateHotel, deleteHotel };

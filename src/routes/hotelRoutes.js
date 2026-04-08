@@ -1,8 +1,15 @@
 const express = require('express');
 const router = express.Router();
-const { getHotelContent, updateHotelContent } = require('../controllers/hotelController');
+const { 
+  getAllHotels, 
+  createHotel, 
+  updateHotel, 
+  deleteHotel 
+} = require('../controllers/hotelController');
 
-router.get('/', getHotelContent);
-router.put('/', updateHotelContent);   // or POST if you prefer
+router.get('/', getAllHotels);
+router.post('/', createHotel);        // Admin use karega
+router.put('/:id', updateHotel);
+router.delete('/:id', deleteHotel);
 
 module.exports = router;

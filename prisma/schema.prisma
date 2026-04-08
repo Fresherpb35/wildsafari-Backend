@@ -83,20 +83,18 @@ imageEmoji String?  // e.g. "🐯"
   @@map("blogs")
 }
 
-model HotelContent {
-  id              String   @id @default(cuid())
-  hotelName       String
-  description     String
-  contactEmail    String?
-  phone           String?
-  address         String?
-  websiteTitle    String?
-  welcomeText     String?
-  aboutSection    String?
-  images          String[] // JSON array of image URLs
-  updatedAt       DateTime @updatedAt
+model Hotel {
+  id        String   @id @default(cuid())
+  name      String
+  img       String
+  tag       String?
+  desc      String
+  sortOrder Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  @@map("hotel_content")
+  @@map("hotels")
 }
 
 enum SafariType {

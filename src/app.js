@@ -81,7 +81,7 @@ app.use('/api/contacts', contactRoutes);   // Note: strictLimiter is missing in 
 app.use('/api/newsletter', newsletterRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/blogs', blogRoutes);
-app.use('/api/hotel', hotelRoutes);
+app.use('/api/hotels', hotelRoutes);
 // ─── 404 HANDLER ─────────────────────────────────────────────────────────────
 app.use((req, res) => {
   res.status(404).json({ success: false, message: `Route ${req.originalUrl} not found` });
