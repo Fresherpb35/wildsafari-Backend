@@ -1,0 +1,56 @@
+2026-04-07 19:50:30 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.blog.create()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\blogController.js:33:36
+
+  30   .replace(/[^a-z0-9]+/g, '-')
+  31   .replace(/^-|-$/g, '');
+  32 
+→ 33 const blog = await prisma.blog.create(
+Unique constraint failed on the fields: (`slug`)
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async createBlog (C:\Users\akshi\Videos\wild-main\backend\src\controllers\blogController.js:33:18)
+2026-04-07 19:50:30 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.blog.create()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\blogController.js:33:36
+
+  30   .replace(/[^a-z0-9]+/g, '-')
+  31   .replace(/^-|-$/g, '');
+  32 
+→ 33 const blog = await prisma.blog.create(
+Unique constraint failed on the fields: (`slug`)
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async createBlog (C:\Users\akshi\Videos\wild-main\backend\src\controllers\blogController.js:33:18)
+2026-04-07 19:51:15 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.blog.create()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\blogController.js:33:36
+
+  30   .replace(/[^a-z0-9]+/g, '-')
+  31   .replace(/^-|-$/g, '');
+  32 
+→ 33 const blog = await prisma.blog.create(
+Unique constraint failed on the fields: (`slug`)
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async createBlog (C:\Users\akshi\Videos\wild-main\backend\src\controllers\blogController.js:33:18)
+2026-04-07 19:51:15 [error]: PrismaClientKnownRequestError: 
+Invalid `prisma.blog.create()` invocation in
+C:\Users\akshi\Videos\wild-main\backend\src\controllers\blogController.js:33:36
+
+  30   .replace(/[^a-z0-9]+/g, '-')
+  31   .replace(/^-|-$/g, '');
+  32 
+→ 33 const blog = await prisma.blog.create(
+Unique constraint failed on the fields: (`slug`)
+    at $n.handleRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\akshi\Videos\wild-main\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async createBlog (C:\Users\akshi\Videos\wild-main\backend\src\controllers\blogController.js:33:18)

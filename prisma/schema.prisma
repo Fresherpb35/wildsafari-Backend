@@ -69,6 +69,11 @@ model Blog {
   content     String   // Use Markdown or HTML
   excerpt     String?
   imageUrl    String?
+  category  String   @default("Wildlife")
+tag       String?
+readTime  String   @default("6 min read")
+color     String   @default("#2d7a4f")
+imageEmoji String?  // e.g. "🐯"
   author      String   @default("Admin")
   published   Boolean  @default(false)
   publishedAt DateTime?
