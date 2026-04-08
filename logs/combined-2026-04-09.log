@@ -247,3 +247,7 @@ An operation failed because it depends on one or more records that were required
 2026-04-09 00:18:57 [warn]: Slow query (608ms): INSERT INTO "public"."hotels" ("id","name","img","tag","desc","sortOrder","isActive","createdAt","updatedAt") VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING "public"."hotels"."id", "public"."hotels"."name", "public"."hotels"."img", "public"."hotels"."tag", "public"."hotels"."desc", "public"."hotels"."sortOrder", "public"."hotels"."isActive", "public"."hotels"."createdAt", "public"."hotels"."updatedAt"
 2026-04-09 00:18:57 [http]: ::1 - - [08/Apr/2026:18:48:57 +0000] "POST /api/hotels HTTP/1.1" 200 702 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
 2026-04-09 00:29:57 [info]: SIGINT received — shutting down gracefully
+2026-04-09 00:35:40 [info]: 📧 Email transporter ready
+2026-04-09 00:35:41 [info]: ✅ Database connected
+2026-04-09 00:35:41 [info]: 🚀 Server running on port 5000 [development]
+2026-04-09 00:40:00 [info]: SIGINT received — shutting down gracefully

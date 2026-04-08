@@ -21,30 +21,28 @@ const app = express();
 // ─── SECURITY MIDDLEWARE ──────────────────────────────────────────────────────
 app.use(helmet());
 
-const allowedOrigins = [
-  'http://localhost:3000',
-  'http://localhost:3001',
-  'https://wildlife-rose.vercel.app',
-  'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
-  'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app',
-  'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app',
-  'https://wildlife-admin-delta.vercel.app',
-  'https://wildlife-admin-n4xi-nfvhowean-fresherpb35s-projects.vercel.app',
-  'https://wildlife-admin-ogme1mdrn-fresherpb35s-projects.vercel.app'
-];
+
 
 app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin) return callback(null, true);   // allow non-browser requests
+  origin: function (origin, callback) {
+    // ✅ allow server-to-server / Postman / curl
+    if (!origin) return callback(null, true);
 
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error(`CORS: ${origin} not allowed`), false);
+    // ✅ allow localhost (dev)
+    if (origin.includes("localhost")) {
+      return callback(null, true);
     }
+
+    // ✅ allow ALL Vercel deployments (auto)
+    if (origin.endsWith(".vercel.app")) {
+      return callback(null, true);
+    }
+
+    // ❌ block everything else
+    return callback(new Error(`CORS: ${origin} not allowed`));
   },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],   // ← Added PUT
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   optionsSuccessStatus: 200
 }));
