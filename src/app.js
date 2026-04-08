@@ -27,7 +27,8 @@ const allowedOrigins = [
   'https://wildlife-rose.vercel.app',
   'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
   'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app',
-  'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app'
+  'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app',
+  'https://wildlife-admin-delta.vercel.app',
 ];
 
 app.use(cors({
