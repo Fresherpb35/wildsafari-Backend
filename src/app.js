@@ -28,8 +28,8 @@ const allowedOrigins = [
   'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
   'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app',
   'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app',
-  'https://new-wild-admin.vercel.app/',
-  'https://new-wild-admin-cpon5zvny-fresherpb35s-projects.vercel.app/'
+  'https://new-wild-admin.vercel.app',
+  'https://new-wild-admin-cpon5zvny-fresherpb35s-projects.vercel.app'
 ];
 
 
