@@ -28,22 +28,20 @@ const allowedOrigins = [
   'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
   'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app',
   'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app',
-  'https://new-wild-admin.vercel.app'
- 
+  'https://new-wild-admin.vercel.app/',
+  'https://new-wild-admin-cpon5zvny-fresherpb35s-projects.vercel.app/'
 ];
+
 
 app.use(cors({
   origin: function(origin, callback) {
-    if (!origin) return callback(null, true);
+    if (!origin) return callback(null, true);   // allow non-browser requests
 
-    if (
-      origin.endsWith(".vercel.app") ||
-      origin.startsWith("http://localhost")
-    ) {
-      return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error(`CORS: ${origin} not allowed`), false);
     }
-
-    callback(new Error("CORS not allowed"), false);
   },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],   // ← Added PUT
