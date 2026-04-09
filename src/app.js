@@ -21,16 +21,16 @@ const app = express();
 // ─── SECURITY MIDDLEWARE ──────────────────────────────────────────────────────
 app.use(helmet());
 
-// const allowedOrigins = [
-//   'http://localhost:3000',
-//   'http://localhost:3001',
-//   'https://wildlife-rose.vercel.app',
-//   'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
-//   'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app',
-//   'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app',
-//   'https://wildlife-admin-jgg1.vercel.app',
-//   'https://wildlife-admin-jgg1-ikrfb5a4b-fresherpb35s-projects.vercel.app'
-// ];
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:3001',
+  'https://wildlife-rose.vercel.app',
+  'https://wildlife-o6gwdisjz-fresherpb35s-projects.vercel.app',
+  'https://wildlife-ni2s66mwe-fresherpb35s-projects.vercel.app',
+  'https://wildlife-h655r87a2-fresherpb35s-projects.vercel.app',
+  'https://new-wild-admin.vercel.app'
+ 
+];
 
 app.use(cors({
   origin: function(origin, callback) {
