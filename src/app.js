@@ -34,13 +34,16 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function(origin, callback) {
-    if (!origin) return callback(null, true);   // allow non-browser requests
+    if (!origin) return callback(null, true);
 
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error(`CORS: ${origin} not allowed`), false);
+    if (
+      origin.endsWith(".vercel.app") ||
+      origin.startsWith("http://localhost")
+    ) {
+      return callback(null, true);
     }
+
+    callback(new Error("CORS not allowed"), false);
   },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],   // ← Added PUT
