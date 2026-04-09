@@ -22,14 +22,19 @@ async function createBooking(req, res, next) {
       },
     });
 
-    // Send admin alert (non-blocking)
-    Promise.allSettled([
-      email.sendBookingAlert(booking),
-    ]).then(results => {
-      results.forEach((r, i) => {
-        if (r.status === 'rejected') logger.warn(`Booking email ${i} failed:`, r.reason?.message);
-      });
-    });
+    // ✅ FIX: Wait for emails BEFORE sending the response
+    // Dono emails ko parallel mein bhejo par 'await' karo
+    try {
+      await Promise.all([
+        email.sendBookingAlert(booking),
+        email.sendBookingConfirmation(booking)
+      ]);
+      logger.info(`📧 Emails sent for booking: ${booking.id}`);
+    } catch (mailErr) {
+      // Agar mail fail bhi ho jaye, hum error log karenge 
+      // par customer ko success response mil jayega kyunki booking DB mein ban chuki hai.
+      logger.error(`❌ Email sending failed: ${mailErr.message}`);
+    }
 
     return res.status(201).json({
       success: true,
