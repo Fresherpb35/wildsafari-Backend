@@ -88,12 +88,12 @@ async function getBookingById(req, res, next) {
 // PUT /api/bookings/:id  — Full Update (Used by Frontend Edit)
 // PATCH /api/bookings/:id/status  — admin
 // PUT /api/bookings/:id  — Full Update
+// PUT /api/bookings/:id — Full Update
 async function updateBooking(req, res, next) {
   try {
     const { id } = req.params;
     const data = req.body;
 
-    // Pehle purana booking fetch karo taaki status change pata chale
     const oldBooking = await prisma.booking.findUnique({ where: { id } });
     if (!oldBooking) {
       return res.status(404).json({ success: false, message: "Booking not found" });
@@ -114,19 +114,18 @@ async function updateBooking(req, res, next) {
       },
     });
 
-    // 🔥 Status change hone par user ko email bhejo
+    // 🔥 FIX: Remove 'await' from email sending. Let it happen in the background.
     if (data.status && data.status !== oldBooking.status) {
-      try {
-        if (data.status === 'CONFIRMED' || data.status === 'CANCELLED') {
-          await email.sendBookingStatusUpdate(updatedBooking);
-          logger.info(`📧 Status update email sent to ${updatedBooking.email} → ${data.status}`);
-        }
-      } catch (err) {
-        logger.warn(`❌ Failed to send status email to ${updatedBooking.email}:`, err.message);
+      if (data.status === 'CONFIRMED' || data.status === 'CANCELLED') {
+        // Hum await nahi kar rahe, seedha call kar rahe hain
+        email.sendBookingStatusUpdate(updatedBooking)
+          .then(() => logger.info(`📧 Email sent to ${updatedBooking.email}`))
+          .catch((err) => logger.warn(`❌ Email failed:`, err.message));
       }
     }
 
-    res.json({
+    // Response turant bhej do, email background mein chalta rahega
+    return res.json({
       success: true,
       message: "Booking updated successfully",
       data: updatedBooking,

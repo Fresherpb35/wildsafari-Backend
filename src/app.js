@@ -19,7 +19,9 @@ const hotelRoutes = require('./routes/hotelRoutes');
 const app = express();
 
 // ─── SECURITY MIDDLEWARE ──────────────────────────────────────────────────────
-app.use(helmet());
+app.use(helmet({
+  crossOriginResourcePolicy: false,
+}))
 
 const allowedOrigins = [
   'http://localhost:3000',
@@ -35,21 +37,33 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function(origin, callback) {
-    if (!origin) return callback(null, true);   // allow non-browser requests
+    // 1. Allow requests with no origin (like Postman or mobile apps)
+    if (!origin) return callback(null, true);
 
-    if (allowedOrigins.includes(origin)) {
+    // 2. Check if it's Localhost (all ports)
+    const isLocalhost = /^http:\/\/localhost(:\d+)?$/.test(origin);
+
+    // 3. Check if it's a Vercel Preview URL (any sub-domain of vercel.app)
+    const isVercelPreview = origin.endsWith('.vercel.app');
+
+    // 4. Check if it's in our explicit allowed list
+    const isExplicitlyAllowed = allowedOrigins.includes(origin);
+
+    if (isLocalhost || isVercelPreview || isExplicitlyAllowed) {
       callback(null, true);
     } else {
+      // Security ke liye unknown origins ko block karein
+      console.log("CORS blocked for origin:", origin);
       callback(new Error(`CORS: ${origin} not allowed`), false);
     }
   },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],   // ← Added PUT
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   optionsSuccessStatus: 200
 }));
 
-// Handle preflight requests explicitly (good practice)
+// Pre-flight handling
 app.options('*', cors());
 
 // ─── RATE LIMITING ────────────────────────────────────────────────────────────
